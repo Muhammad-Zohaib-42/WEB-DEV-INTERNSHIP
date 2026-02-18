@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+<body>
+    <!-- navigations -->
+    <h1>Navigations</h1>
+
+    <!-- navigating user to another website -->
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+
+    <!-- br tag is used to break line so next content start from new line -->
+    <br>
+
+    <!-- navigating user to another page of website -->
+    <a href="intro.html">Intro Class</a>
+    <a href="about.html" target="_blank">About Page</a> <!== target attribute to open link into another page ==>
+
+    <!-- 
+        inline vs block elements 
+        inline => only take width which is needed according to its content , like a and span tags
+        block => cover the full width of its parent element , like h1 and p tags
+    -->
+
+    <!-- lists -->
+    <h2>Lists</h2>
+
+    <!-- unorder lists -->
+    <h2>Unorder list</h2>
+
+    <ul type="circle">  <!== type attribute to change style of bullets and none for hiding the bullets ==>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <!-- Nested Unorder lists -->
+    <h2>Nested Lists</h2>
+
+    <ul>
+        <li>Men</li>
+        <li>Women</li>
+        <!-- nested list start here -->
+        <ul>
+            <li>Cosmetics</li>
+            <li>Cloths</li>
+            <!-- another nested list -->
+            <ul>
+                <li>Maxy</li>
+            </ul>
+            <li>Shoes</li>
+        </ul>
+        <li>Kids</li>
+    </ul>
+
+    <!-- order lists -->
+    <h2>Order Lists</h2>
+
+    <ol type="A">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <!-- we can create unorder list in order list -->
+        <ul>
+            <li>First Item</li>
+        </ul>
+        <li>Third Item</li>
+    </ol>
+
+    <!-- 
+        semantic vs non semantic tags
+        semantic => semantic means meaningful tag by reading tag we easily understand for which purpose we are using this tag like header and footer tag
+        non semantic => there is no specific meaning of these tags like div and span
+    -->
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
