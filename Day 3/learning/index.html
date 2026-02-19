@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 3 learning</title>
+</head>
+<body>
+    <!-- Tables in html -->
+    <h1>Tables</h1>
+
+    <!-- table tag is used to create table in html -->
+    <table border="1px solid black">
+        <!-- table head tag is used to create head of the table and table body tag is used to create body of the table -->
+        <thead>
+            <!-- tr tag is used to create row in table and th tag is used to create heading of the table and td tag is used to create data in the table -->
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>decode</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>decode</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>decode</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>decode</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+        col span vs row span :
+        col span is used to merge columns and row span is used to merge rows in a table
+    -->
+
+    <!-- forms in html -->
+    <h2>Forms</h2>
+
+    <!-- form tag is used to create form in html -->
+    <form>
+        <!-- input tag is used to create input field in form and type attribute is used to define the type of input field -->
+        <div>
+            <!-- required attribute is used to make the input field mandatory and user cannot submit the form without filling the required field -->
+            Name:<input type="text" required> <!-- to get text data like name -->
+        </div>
+        <div>
+            Email:<input type="email"> <!-- to get email from user -->
+        </div>
+        <div>
+            Age:<input type="number" min="1" max="40"> <!-- to get number data like age and min and max attribute is used to define the range of number -->
+        </div>
+        <div>
+            Password:<input type="password"> <!-- to get secure data from user like password -->
+        </div>
+        <div>
+            Gender:
+            <input type="radio" name="gender">Male <!-- to get single option from user and name attribute is used to group radio buttons -->
+            <input type="radio" name="gender">Female
+        </div>
+        <div>
+            <input type="checkbox" id="terms"> <!-- to get multiple options from user and id attribute is used to associate label with checkbox -->
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <div>
+            <select name="country"> <!-- to create dropdown list and name attribute is used to get the value of selected option -->
+                <option value="">Select Country</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="india">India</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea> <!-- to get multi line input from user and name attribute is used to get the value of textarea -->
+        </div>
+        <div>
+            <input type="submit" value="Submit"> <!-- to submit the form and value attribute is used to define the text on the button -->
+            <input type="reset" value="Reset"> <!-- to reset the form -->
+        </div>
+    </form>
+
+</body>
+</html>

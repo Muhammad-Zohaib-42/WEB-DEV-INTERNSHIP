@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
+    <title>day 2 learning</title>
 </head>
 <body>
     <!-- navigations -->
     <h1>Navigations</h1>
+    
+    <!-- a tag is used to create links in html, href attribute is used to specify the URL of the page the link goes to -->
 
     <!-- navigating user to another website -->
     <a href="https://www.google.com/">Google</a>
@@ -18,14 +20,14 @@
     <!-- br tag is used to break line so next content start from new line -->
     <br>
 
-    <!-- navigating user to another page of website -->
+    <!-- navigating user to another page of same website -->
     <a href="intro.html">Intro Class</a>
-    <a href="about.html" target="_blank">About Page</a> <!== target attribute to open link into another page ==>
+    <a href="about.html" target="_blank">About Page</a> <!-- target attribute is used to specify where to open the linked document, _blank means open in new tab -->
 
     <!-- 
-        inline vs block elements 
-        inline => only take width which is needed according to its content , like a and span tags
-        block => cover the full width of its parent element , like h1 and p tags
+        inline vs block elements
+        inline => these elements do not start on a new line and only take up as much width as necessary, like a tag and span tag
+        block => these elements start on a new line and take up the full width available ( of their parent element ), like div tag and p tag 
     -->
 
     <!-- lists -->
@@ -65,7 +67,7 @@
     <ol type="A">
         <li>First Item</li>
         <li>Second Item</li>
-        <!-- we can create unorder list in order list -->
+        <!-- yes we can create unorder list in order list or order list in an unorder list -->
         <ul>
             <li>First Item</li>
         </ul>
@@ -73,9 +75,9 @@
     </ol>
 
     <!-- 
-        semantic vs non semantic tags
-        semantic => semantic means meaningful tag by reading tag we easily understand for which purpose we are using this tag like header and footer tag
-        non semantic => there is no specific meaning of these tags like div and span
+        semantic vs non-semantic tags
+        semantic => these tags have meaning and describe the content inside them, like nav tag, header tag, footer tag, article tag, section tag etc
+        non-semantic => these tags do not have any meaning and do not describe the content inside them, like div tag and span tag 
     -->
 
     <nav>

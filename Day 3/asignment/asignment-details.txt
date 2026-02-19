@@ -1,0 +1,52 @@
+Assignment Title: Instagram & Facebook Login and Signup Pages (HTML , CSS (optional))
+
+Description:
+In this assignment, we are required to design the structure of Instagram and Facebook login and signup pages. The focus is on writing clean, semantic, and well-structured HTML code.
+
+Requirements:
+
+1. Use Proper HTML Document Structure:
+   - <!DOCTYPE html>
+   - <html lang="en">
+   - <head> with proper meta tags
+   - <title>
+   - <body>
+
+2. Use Semantic HTML Elements:
+   - <header>
+   - <main>
+   - <section>
+   - <footer>
+   - Proper use of <h1> to <h6>
+
+3. Create Forms Using Best Practices:
+   - Use <form> element correctly
+   - Use proper input types (email, password, text, etc.)
+   - Use <label> with "for" attribute
+   - Use "id" and "name" attributes properly
+   - Use required attribute where necessary
+   - Use placeholder appropriately
+   - Group related inputs if needed
+
+4. Accessibility:
+   - Proper labeling for screen readers
+   - Meaningful button text
+   - Logical structure and hierarchy
+
+5. Pages to Create:
+   - Instagram Login Page
+   - Instagram Signup Page
+   - Facebook Login Page
+   - Facebook Signup Page
+
+Learning Outcomes:
+- Understanding semantic HTML
+- Proper form structure
+- Accessibility best practices
+- Clean and readable code writing
+
+Submitted By:
+Muhammad Zohaib
+
+Date:
+(Write submission date here)
