@@ -125,6 +125,7 @@ button {
 }
 
 .create-acc-btn {
+    width: 100%;
     margin-top: 2rem;
     color: #0064E0;
     border: 1px solid #0064E0;
@@ -132,6 +133,11 @@ button {
     &:hover {
         background-color: #F2F2F2;
     }
+}
+
+.create-acc-link {
+    display: block;
+    width: 100%;
 }
 
 .meta-logo-container {
