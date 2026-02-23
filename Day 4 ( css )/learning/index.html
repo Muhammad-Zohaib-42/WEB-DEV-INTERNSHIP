@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4</title>
+    <!-- internal css -->
+    <style>
+        p {
+            background-color: red; 
+            color: white; 
+            text-align: center; 
+            padding: 20px;
+        }
+    </style>
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- inline css -->
+    <h1 id="heading" style="background-color: black; color: white; text-align: center; padding: 20px;">Stylesheets</h1>
+    <!-- internal css applying to these p tags -->
+    <p class="bgCol textCol">This is just a paragraph</p>
+    <p class="bgCol">This is just a paragraph</p>
+    <p class="bgCol">This is just a paragraph</p>
+    <p class="anotherBgCol">This is just a paragraph</p>
+    <p class="anotherBgCol">This is just a paragraph</p>
+    <!-- external css applying to this button -->
+    <button>Contact Us</button>
+</body>
+</html>
+
+<!-- DRY Code ( dont repeat yourself ) -->
+<!-- inline css => we use style as an attribute inside the tag we want to style -->
+<!-- internal css => we write css code inside style tag in head tag -->
+<!-- external css => we write css code in a separate file and link it to our html file using link tag in head tag -->

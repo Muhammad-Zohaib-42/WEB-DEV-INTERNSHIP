@@ -1,0 +1,25 @@
+/* tag selectors */
+
+button {
+    background-color: aqua;
+}
+
+/* class selectors */
+
+.bgCol {
+    background-color: blueviolet;
+}
+
+.anotherBgCol {
+    background-color: brown;
+}
+
+.textCol {
+    color: red;
+}
+
+/* id selectors */
+
+#heading {
+    font-size: 40px;
+}
