@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eflyer</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- style.css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- script.js file link -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="max-width">
+        <nav>
+            <ul>
+                <li><a href="index.html">Best Sellers</a></li>
+                <li><a href="index.html">Gift Ideas</a></li>
+                <li><a href="index.html">New Releases</a></li>
+                <li><a href="index.html">Today's Deals</a></li>
+                <li><a href="index.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- menu -->
+    <aside class="menu">
+        <i class="fa-solid fa-xmark close"></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Fashion</a></li>
+            <li><a href="index.html">Electronic</a></li>
+            <li><a href="index.html">Jewellery</a></li>
+        </ul>
+    </aside>
+
+    <!-- main -->
+    <main>
+        <!-- hero section -->
+        <section class="hero-section">
+            <!-- logo container -->
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+            </div>
+            <!-- hero section header -->
+            <div class="header max-width">
+                <i class="fa-solid fa-bars hamburger"></i>
+                <div class="dropdown-container">
+                    <button class="dropdown-toggle-btn">
+                        <span>All Category</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Action</a></li>
+                        <li><a href="index.html">Another action</a></li>
+                        <li><a href="index.html">Something else here</a></li>
+                    </ul>
+                </div>
+                <form>
+                    <input type="text" placeholder="Search this blog">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="dropdown-container">
+                    <button class="dropdown-toggle-btn country-dropdown-toggle-btn">
+                        <img src="assets/flag-uk.png" alt="uk flag">
+                        <span>English</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown country-dropdown">
+                        <li>
+                            <a href="index.html">
+                                <img src="assets/flag-france.png" alt="france flag">
+                                <span>French</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-links-wrapper">
+                    <a href="index.html">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <span>CART</span>
+                    </a>
+                    <a href="index.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>CART</span>
+                    </a>
+                </div>
+            </div>
+            <!-- hero carousel -->
+            <div class="swiper mySwiper max-width">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>GET START</h2>
+                        <h2>YOUR FAVOURITE SHOPPING</h2>
+                        <button class="buy-now-btn">BUY NOW</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>GET START</h2>
+                        <h2>YOUR FAVOURITE SHOPPING</h2>
+                        <button class="buy-now-btn">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-btn"></div>
+                <div class="swiper-button-prev swiper-btn"></div>
+            </div>
+        </section>
+
+        <!-- fashion section -->
+        <section class="fashion-section">
+            <h2 class="section-title">Man & Woman Fashion</h2>
+            <div class="wrapper max-width">
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Man T -shirt</h3>
+                        <h4 class="product-card-subtitle"><span>Price</span> $ 30</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/tshirt-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Man -shirt</h3>
+                        <h4 class="product-card-subtitle"><span>Price</span> $ 30</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/dress-shirt-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Woman Scart</h3>
+                        <h4 class="product-card-subtitle"><span>Price</span> $ 30</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/women-clothes-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-actions-wrapper">
+                <button class="left-btn"><i class="fa-solid fa-angle-down"></i></button>
+                <button class="right-btn"><i class="fa-solid fa-angle-down"></i></button>
+            </div>
+        </section>
+
+        <!-- electronic section -->
+        <section class="electronic-section">
+            <h2 class="section-title">Electronic</h2>
+            <div class="wrapper max-width">
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Laptop</h3>
+                        <h4 class="product-card-subtitle"><span>Start Price</span> $ 100</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/laptop-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Mobile</h3>
+                        <h4 class="product-card-subtitle"><span>Start Price</span> $ 100</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/mobile-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Computers</h3>
+                        <h4 class="product-card-subtitle"><span>Start Price</span> $ 100</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/computer-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-actions-wrapper">
+                <button class="left-btn"><i class="fa-solid fa-angle-down"></i></button>
+                <button class="right-btn"><i class="fa-solid fa-angle-down"></i></button>
+            </div>
+        </section>
+
+        <!-- Jewellery Accessories section -->
+        <section class="jewellery-accessories-section">
+            <h2 class="section-title">Jewellery Accessories</h2>
+            <div class="wrapper max-width">
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Jumkas</h3>
+                        <h4 class="product-card-subtitle"><span>Start Price</span> $ 100</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/jhumka-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Necklaces</h3>
+                        <h4 class="product-card-subtitle"><span>Start Price</span> $ 100</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/neklesh-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="content-container">
+                        <h3 class="product-card-title">Kangans</h3>
+                        <h4 class="product-card-subtitle"><span>Start Price</span> $ 100</h4>
+                    </div>
+                    <div class="frame">
+                        <img src="assets/kangan-img.png" alt="shirt image">
+                    </div>
+                    <div class="actions-wrapper">
+                        <a href="index.html" class="buy-now-action">Buy Now</a>
+                        <a href="index.html" class="see-more-action">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-actions-wrapper">
+                <button class="left-btn"><i class="fa-solid fa-angle-down"></i></button>
+                <button class="right-btn"><i class="fa-solid fa-angle-down"></i></button>
+            </div>
+        </section>
+
+        <!-- loader -->
+        <div class="loader"></div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <img class="logo" src="assets/logo.png" alt="logo">
+        <form>
+            <input type="text" placeholder="Your Email">
+            <button>SUBSCRIBE</button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Best Sellers</a></li>
+                <li><a href="index.html">Gift Ideas</a></li>
+                <li><a href="index.html">New Releases</a></li>
+                <li><a href="index.html">Today's Deals</a></li>
+                <li><a href="index.html">Customer Service</a></li>
+            </ul>
+        </nav>
+        <p class="number-para">Help Line Number : <a href="tel:+1 1800 1200 1200">+1 1800 1200 1200</a></p>
+        <p class="copyright">© 2020 All Rights Reserved. Design by <a href="https://zohaibdev-official.vercel.app/" target="_blank">Muhammad Zohaib</a></p>
+    </footer>
+</body>
+</html>
