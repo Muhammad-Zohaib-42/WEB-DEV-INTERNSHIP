@@ -29,6 +29,7 @@ body {
 a {
     text-decoration-line: none;
     color: inherit;
+    cursor: pointer;
 }
 
 ul {
@@ -36,6 +37,7 @@ ul {
 }
 
 .btn {
+    display: inline-block;
     cursor: pointer;
     padding: 13px 27px;
     border-radius: 60px;
@@ -43,6 +45,10 @@ ul {
     font-weight: 300;
     transition: var(--transition);
     letter-spacing: 1px;
+}
+
+.btn:active {
+    transform: scale(0.9);
 }
 
 /* utils classes */
@@ -152,6 +158,25 @@ header .right .linkedin:hover {
 
 header .bottom {
     padding-block: 18px;
+}
+
+header .bottom.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0f1425;
+    width: 100%;
+    padding-block: 9px;
+    animation: topToBottom .5s;
+}
+
+@keyframes topToBottom {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
 }
 
 header .bottom .logo {
@@ -284,6 +309,10 @@ header .bottom nav ul a.active {
     padding: 100px 0 80px;
 }
 
+.hero-section .content-container.fixed {
+    padding-top: 190px;
+}
+
 .hero-section .content-container h6 {
     font-size: 14px;
     margin-bottom: 8px;
@@ -390,4 +419,115 @@ header .bottom nav ul a.active {
     font-weight: 300;
     line-height: 1.5;
     width: 218px;
+}
+
+/* about section */
+.about-section {
+    padding-block: 58px;
+}
+
+.about-section .container {
+    display: flex;
+    gap: 24px;
+}
+
+.about-section .left {
+    flex-grow: 1;
+    padding-right: 12px;
+}
+
+.about-section .left .subtitle-wrapper {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.about-section .left .line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.about-section .left .subtitle-wrapper h6 {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.about-section .left h1 {
+    font-size: 52px;
+    margin: 16px 0 8px;
+    color: #2c3844;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 62.4px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.about-section .left p {
+    margin-block: 16px;
+    font-size: 17px;
+    color: #121328d4;
+    line-height: 1.5;
+}
+
+.about-section .left .info-wrapper {
+    display: flex;
+    gap: 4px;
+    margin-top: 24px;
+}
+
+.about-section .left .info-wrapper div {
+    margin-top: 14px;
+}
+
+.about-section .left .info-wrapper img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-inline: 8px;
+}
+
+.about-section .left .info-wrapper h6 {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.about-section .left .info-wrapper h6:first-child {
+    color: #2c3844;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.about-section .left .info-wrapper h6:last-child {
+    color: #767676;
+    margin-top: 4px;
+    font-weight: 300;
+}
+
+.about-section .right {
+    width: fit-content;
+    padding-left: 12px;
+}
+
+.about-section .right .frame {
+    height: 431px;
+    width: 431px;
+    border: 10px solid var(--primary-color);
+    overflow: hidden;
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+.about-section .right .frame img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: var(--transition);
 }
