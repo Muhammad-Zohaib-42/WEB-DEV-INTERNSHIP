@@ -1,0 +1,137 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1000;
+  transition: all .5s;
+  
+}
+
+header *{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header.blur {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+}
+
+header.blur .sub-menu a {
+  color: black;
+}
+
+.sub-menu-container {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  display:none;
+  padding-top: 20px;
+}
+
+.sub-menu {
+  width: 100%;
+  padding: 50px 70px 120px;
+  background-image: url("../assets/images/navbar-bg.svg");
+  display: flex;
+  gap: 10px;
+  color: black;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+div:has( .sub-menu-link) {
+  position: relative;
+  padding: 10px 0;
+}
+
+div:has(.sub-menu-link):hover .sub-menu-container {
+  display: flex;
+}
+
+.sub-menu a{
+  color: inherit;
+  padding: 15px 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .3s;
+}
+
+.sub-menu a i {
+  font-size: 12px;
+  display: none;
+}
+
+.sub-menu a:hover {
+  color: #4c40f7;
+  background-color: #4c40f73d;
+}
+
+.sub-menu a:hover i {
+  display: inline-block;
+}
+
+.sub-menu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+
+header img {
+  width: 150px;
+}
+
+header a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+header nav a:hover {
+  color: #d1d5db;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header .btns-wrapper a {
+  padding: 10px 22px;
+  font-size: 12px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+header .btns-wrapper a:hover {
+  transform: translateY(-4px);
+}
+
+header .btns-wrapper a:active {
+  transform: scale(0.9);
+}
+
+header .btns-wrapper a:first-child {
+  border: 2px solid white;
+}
+
+header .btns-wrapper a:last-child {
+  background-color: #4c40f7;
+  border: 2px solid #4c40f7;
+  margin-left: 24px;
+}

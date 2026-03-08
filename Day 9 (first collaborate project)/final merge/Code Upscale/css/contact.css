@@ -1,0 +1,226 @@
+.white-logo {
+    display: none;
+}
+
+header nav a,
+header .btns-wrapper a:first-child {
+    color: black;
+}
+
+header .btns-wrapper a:first-child {
+    border-color: black;
+}
+
+header nav a:hover {
+    color: #4b5563;
+}
+
+header.blur nav a{
+    color: white;
+}
+
+header.blur .btns-wrapper a:first-child {
+    color: white;
+    border-color: white;
+}
+
+header.blur .black-logo {
+    display: none;
+}
+
+header.blur .white-logo {
+    display: block;
+}
+
+/* main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.umar-contact h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.umar-contact h3 {
+    color: rgba(0, 0, 255, 0.596);
+    font-size: 25px;
+    padding: 10px 0px;
+    font-weight: 400;
+}
+
+.con-umar {
+    text-align: center;
+    margin: 50px;
+    margin-top: 0px;
+}
+
+.box-umar {
+    margin-bottom: 30px;
+}
+
+.heeroo {
+    /* background: #000; */
+    width: 95%;
+    margin: 20px auto;
+}
+
+.mail-umar {
+    background: hwb(0 100% 0%);
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    /* gap: 10px; */
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.192);
+    /* word-spacing: 2px; */
+}
+
+.btn-umar button {
+    background: rgb(255, 255, 255);
+    color: gray;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+
+.umar-contact {
+    background: #f4f4fab7;
+    height: 280vh;
+    padding-top: 90px;
+}
+
+.arrow i:first-child {
+    color: rgba(185, 191, 245, 0.5);
+    font-size: 30px;
+}
+
+.arrow i:last-child {
+
+    color: rgba(135, 207, 235, 0.637);
+    font-size: 30px;
+}
+
+
+.next-umar h4 {
+    padding: 20px 0px;
+    font-size: larger;
+}
+
+.box-umar {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.mail span {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.mail-umar h4 {
+    color: rgba(128, 128, 128, 0.842);
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn-sect {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.inputt input {
+    /* background: #000; */
+    width: 48%;
+    height: 60px;
+    /* border: 1 px solid rgba(231, 231, 231, 0.836) margin: 1o auto; */
+    /* line-height: 70px; */
+    border: none;
+    margin: 0 10px;
+    padding-left: 7px;
+}
+
+.innn {
+    /* display: flex; */
+    /* background: #000; */
+    justify-content: space-between;
+    /* width: 95%; */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.text {
+    margin-top: 50px;
+    width: 98%;
+    height: 200px;
+}
+
+.robot {
+    display: flex;
+    /* background: #000; */
+    width: 21%;
+    border: 2px solid black;
+    justify-content: space-between;
+    /* gap: 16px; */
+    margin: 29px 0px;
+}
+
+.capcha {
+    display: flex;
+    flex-direction: column;
+}
+
+.capcha img {
+    width: 33px;
+}
+
+.capcha span {
+    font-size: smaller;
+    color: gray;
+}
+
+.bbttnn {
+    padding: 17px 25px;
+    background-color: rgba(0, 0, 255, 0.767);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-weight: 900;
+}
+
+.usa {
+    display: flex;
+    width: 30%;
+    /* border: 1px solid gray; */
+    align-items: center;
+}
+
+.ussa {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#usa {
+    display: flex;
+    justify-content: space-around;
+    color: rgba(27, 27, 27, 0.692);
+}

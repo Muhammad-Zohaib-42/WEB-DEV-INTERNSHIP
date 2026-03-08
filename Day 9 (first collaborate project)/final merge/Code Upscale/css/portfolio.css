@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.white-logo {
+    display: none;
+}
+
+header nav a,
+header .btns-wrapper a:first-child {
+    color: black;
+}
+
+header .btns-wrapper a:first-child {
+    border-color: black;
+}
+
+header nav a:hover {
+    color: #4b5563;
+}
+
+header.blur nav a{
+    color: white;
+}
+
+header.blur .btns-wrapper a:first-child {
+    color: white;
+    border-color: white;
+}
+
+header.blur .black-logo {
+    display: none;
+}
+
+header.blur .white-logo {
+    display: block;
+}
+
+#Main-Articles-section{
+    background: url(../assets/images/NewPortbgimage.bf0381af.svg);
+    height: 87vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-sectioin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+   }
+.hero-sectioin h1{
+    width: 75%;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    
+}
+.hero-sectioin h1 span{
+    color: rgb( 76, 64 ,247 );
+}
+
+.hero-content{
+    height: 36vh;
+}
+
+section {
+  padding: 80px 16px;
+  background-color: #eff6ff;
+}
+
+.main .btns-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 16px;
+  width: 88%;
+  margin-inline: auto;
+}
+
+button {
+  font-size: 14px;
+  padding: 8px 24px;
+  background-color: white;
+  border-radius: 999px;
+  box-shadow:
+    0 0 #0000,
+    0 0 #0000,
+    0 1px 2px 0 #0000000d;
+  border: none;
+  outline: none;
+  line-height: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f3f4f6;
+}
+
+button.active {
+  background-color: #5236ff;
+  color: white;
+}
+
+.cards-wrapper {
+  padding: 80px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card .frame {
+    width: 100%;
+    height: 390px;
+}
+
+.card .frame img {
+    width: 80%;
+}
+
+.card .tag {
+    padding: .5rem 1.5rem;
+    font-size: .875rem;
+        line-height: 1.25rem;
+        box-shadow:
+    0 0 #0000,
+    0 0 #0000,
+    0 1px 2px 0 #0000000d;
+    border-radius: 60px;
+    background-color: white;
+    width: fit-content;
+}
+
+.card-content .title-wrapper {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+
+.line{
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(229, 231, 235);
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 6px;
+}
+
+.card-content p {
+    color: #4d5b6a;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-block: 10px;
+}
+
+.card-content a {
+    border:none;
+    outline:none;
+    text-decoration-line:none;
+    color:#4C40F7;
+    display:inline-block;
+    padding:10px 20px;
+    border: 1px solid #4C40F7;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+.card-content a:hover {
+    background-color: #4C40F7;
+    color: white;
+}
