@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+
+
+#hero-section {
+    background-image: url(../assets/images/blog_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.map iframe {
+    width: 85%;
+    height: 500px;
+    border: 0;
+}
+
+
+
+.contact-section {
+    background: #f5f5f5;
+    padding: 80px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+
+
+.left {
+    width: 60%;
+}
+
+.left h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.form {
+    display: flex;
+    gap: 40px;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    background: transparent;
+    outline: none;
+}
+
+.full {
+    width: 100%;
+}
+
+.send-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: 2px solid #4a3c8c;
+    background: none;
+    color: #4a3c8c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #4a3c8c;
+    color: white;
+}
+
+
+
+.right {
+    width: 40%;
+}
+
+.right h2 {
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a3c8c;
+}
+
+.logo span {
+    color: #ff6a00;
+}
+
+.right p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4a3c8c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.details p {
+    margin-bottom: 5px;
+    color: #777;
+}
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* HERO SECTION */
+
+#hero-section {
+    background-image: url(blog_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* MAP */
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.map iframe {
+    width: 85%;
+    height: 500px;
+    border: 0;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    background: #f5f5f5;
+    padding: 80px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+/* LEFT FORM */
+
+.left {
+    width: 60%;
+}
+
+.left h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.form {
+    display: flex;
+    gap: 40px;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    background: transparent;
+    outline: none;
+}
+
+.full {
+    width: 100%;
+}
+
+.send-btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: 2px solid #4a3c8c;
+    background: none;
+    color: #4a3c8c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #4a3c8c;
+    color: white;
+}
+
+
+/* RIGHT SIDE */
+
+.right {
+    width: 40%;
+}
+
+.right h2 {
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a3c8c;
+}
+
+.logo span {
+    color: #ff6a00;
+}
+
+.right p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4a3c8c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.details p {
+    margin-bottom: 5px;
+    color: #777;
+}
+
+
+
+/* -------------------- */
+/* TABLET RESPONSIVE */
+/* -------------------- */
+
+@media (max-width: 992px) {
+
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .map iframe {
+        width: 90%;
+        height: 400px;
+    }
+
+}
+
+
+
+/* -------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------- */
+
+@media (max-width: 768px) {
+
+    .form {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .map {
+        padding: 60px 0;
+    }
+
+    .map iframe {
+        width: 95%;
+        height: 350px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .left h2 {
+        font-size: 20px;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+
+}
+
+
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width:480px) {
+
+    #hero-section {
+        height: 40vh;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}

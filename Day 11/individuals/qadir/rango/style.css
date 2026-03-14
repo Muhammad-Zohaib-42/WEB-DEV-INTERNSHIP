@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+   
+}
+
+.head{
+    background-color: #1b0d37;
+    height: 70vh;
+    padding: 100px;
+    gap: 40px;
+    
+    
+}
+
+.h1{
+    font-weight: 700; 
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 50px;
+   pad: 200px;
+   color: white;
+    
+}
+
+.Cursus{
+    font-weight: 200px; 
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 19px;
+   pad: 200px;
+   color: white;
+}
+
+.button-email{
+
+    padding: 14px;
+    width: 1000px;
+    border: none;
+    background-color: #452b78;
+    border: none;
+    height: 54px;
+}
+.subscribe {
+    padding: 14px;
+    width: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #452b78;
+    height: 54px;
+    font-size: 15px;
+    font-weight: 60;
+}
+
+.star{
+
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+.star button{
+    border: none;
+    border:solid 2px #452b78;
+    background-color: transparent;
+}
+.center{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

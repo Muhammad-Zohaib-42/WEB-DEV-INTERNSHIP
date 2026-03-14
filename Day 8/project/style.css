@@ -322,7 +322,7 @@ header .bottom nav ul a.active {
 }
 
 .hero-section .content-container h1 {
-    font-size: 70px;
+    font-size: clamp(50px, 5vw, 70px);
     margin: 10px 0 8px 0;
     letter-spacing: 0.8;
     line-height: 1.2;
@@ -385,7 +385,8 @@ header .bottom nav ul a.active {
 /* hero cards wrapper */
 .hero-section .cards-wrapper {
     padding-bottom: 80px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     gap: 10px;
 }
 
@@ -530,4 +531,8 @@ header .bottom nav ul a.active {
     width: 100%;
     background-size: cover;
     transition: var(--transition);
+}
+
+@media (max-width: 941px) {
+    
 }

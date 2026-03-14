@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* variables */
+:root {
+    /* colors */
+    --text-color: #363636;
+
+    /* transitions */
+    --transition-primary: all .3s;
+}
+
+/* global styles */
+body {
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* utils classes */
+.container {
+    max-width: 1250px;
+    margin-inline: auto;
+    padding-inline: 30px;
+}
+
+/* header */
+header {
+    position: relative;
+    z-index: 100;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, .11);
+    animation: come .3s 0s linear;
+}
+
+header.fixed .container:nth-child(2) {
+    height: 80px;
+}
+
+@keyframes come {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+header .container:nth-child(2) {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul a {
+    font-size: 14px;
+    font-weight: 100;
+    transition: var(--transition-primary);
+}
+
+header nav ul a:hover {
+    color: #0078aa;
+}
+
+header nav ul a.active {
+    font-weight: 600;
+}
+
+header nav ul .social-icons-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul .social-icons-wrapper i {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+header .bars {
+    all: unset;
+    width: 24px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+header .bars .bar {
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: var(--transition-primary);
+}
+
+header .bars.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+header .bars.active .bar:nth-child(2) {
+    display: none;
+}
+
+header .bars.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.search-bar-container {
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-primary);
+}
+
+.search-bar-container.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.search-bar-container .container {
+    height: 100%;
+}
+
+.search-bar-container .container form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar-container .container input {
+    flex-grow: 1;
+    height: 50px;
+    color: #505050;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+}
+
+.search-bar-container .container button {
+    all: unset;
+    cursor: pointer;
+}
+
+.search-bar-container .container button:nth-child(1) {
+    margin-right: 10px;
+}
+
+.search-bar-container .container button:nth-child(1) svg {
+    fill: rgb(71, 201, 229);
+}
+
+/* hero section */
+
+.hero-section {
+    height: 125vh;
+    background: url("images/lady.jpg") center / cover no-repeat;
+}
+
+.hero-section:has( header.fixed) {
+    padding-top: 120px;
+}
+
+.hero-content .container {
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content .container .hero-content-container {
+    padding-left: 15px;
+}
+
+.hero-content .container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content .container p {
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.hero-section .cards-wrapper {
+    display: flex;
+    align-items: center;
+    padding-inline: 50px;
+    margin-top: 30px;
+}
+
+.hero-section .cards-wrapper .card {
+    padding: 80px 40px 60px;
+    background-color: #b9f7f9;
+    border-radius: 10px;
+    width: 33.3%;
+}
+
+.hero-section .cards-wrapper .card:nth-child(2) {
+    padding: 100px 50px 80px;
+    background-color: #d4fdfe;
+    position: relative;
+    z-index: 5;
+}
+
+.hero-section .cards-wrapper .card h2 {
+    font-size: 30px;
+    color: #0078aa;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero-section .cards-wrapper .card i {
+    font-size: 40px;
+    color: #0078aa;
+    margin-bottom: 30px;
+}
+
+.hero-section .cards-wrapper .card h3 {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.hero-section .cards-wrapper .card p {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-bottom: 45px;
+    line-height: 1.7;
+}
+
+.hero-section .cards-wrapper .card:nth-child(3) p:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+
+.hero-section .cards-wrapper .card button {
+    padding: 14px 31px;
+    font-size: 14px;
+    background-color: white;
+    color: var(--text-color);
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 600;
+    border-radius: 45px;
+    line-height: 1.5;
+    transition: var(--transition-primary);
+}
+
+.hero-section .cards-wrapper .card button:hover {
+    border-color: #0078aa;
+    background-color: transparent;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    header .container:nth-child(2) {
+        height: 70px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #232323;
+        padding: 20px 30px 0px;
+        color: white;
+        transform: scale(1, 0);
+        transform-origin: top;
+        opacity: 0;
+        transition: var(--transition-primary);
+    }
+
+    header nav.active {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    header nav > ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    header nav > ul li {
+        width: 100%;
+    }
+
+    header nav > ul li a {
+        display: block;
+        width: 100%;
+        padding-block: 16px;
+        border-bottom: 1px solid #303030;
+    }
+
+    header nav ul .social-icons-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul .social-icons-wrapper li {
+        width: fit-content;
+    }
+
+    header nav ul .social-icons-wrapper li a {
+        border: none;
+    }
+
+    header nav ul .social-icons-wrapper i {
+        color: white;
+    }
+
+    header .bars {
+        display: flex;
+    }
+
+    .hero-section {
+        height: 100vh;
+        background-position: right center;
+    }
+
+    .hero-section:has( header.fixed) {
+        padding-top: 70px;
+    }
+
+    .hero-content .container h1 {
+        font-size: 44px;
+    }
+
+    .container {
+        padding-inline: 15px;
+    }
+
+    .hero-section .cards-wrapper {
+        flex-direction: column;
+        padding-inline: 20px;
+        margin-top: 0px;
+    }
+
+    .hero-section .cards-wrapper .card {
+        width: 100%;
+    }
+}
